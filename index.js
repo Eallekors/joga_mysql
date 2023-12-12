@@ -1,7 +1,6 @@
 const app = require('./utils/app')
-const articleRoutes = require('./routes/articles')
-app.use('/', articleRoutes)
+const db = require('./utils/db')
 
-app.listen(3010, () => {
+app.listen(30090, () => {
     console.log('server is connected at port 3010')
-})
+}) 
